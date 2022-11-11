@@ -1,5 +1,6 @@
 # TOTAL TRUCK ੶ Proteção Veicular
 
+ ![license](https://img.shields.io/github/license/barcelosdev/total-truck)
  ![version](https://img.shields.io/badge/version-0.0.1-blue)
 
 ## About
