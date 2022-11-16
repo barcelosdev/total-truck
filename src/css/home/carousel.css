@@ -15,11 +15,8 @@
     align-items: center;
 }
 
-.slides input {
-    display: none;
-}
-
 .slide {
+    display: none;
     width: 25%;
     position: relative;
 }
@@ -41,25 +38,32 @@
     justify-content: center;
     align-items: center;
 
-    border: 2px solid #fff;
+    border-style: none;
     border-radius: 20px;
 
     cursor: pointer;
-    transition: 1;
+    transition: 1s;
 }
 
-.manual-btn:first-of-type {
+#back {
     margin-left: 20px;
 }
 
-.manual-btn:last-of-type {
+#forward {
     margin-right: 20px;
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-.manual-btn:hover {
-    background-color: #fff;
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }

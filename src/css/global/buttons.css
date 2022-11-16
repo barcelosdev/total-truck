@@ -20,6 +20,7 @@
 
 .button:active {
     background: #ad8802;
+    transition: 0.3s
 }
 
 .btn-1 {
