@@ -1,7 +1,17 @@
+/* Global */
+
 @import "./global/global.css";
 
 @import "./global/navbar.css";
 
 @import "./global/buttons.css";
 
+@import "./global/colors.css";
+
+/* Home */
+
 @import "./home/carousel.css";
+
+@import "./home/main.css";
+
+@import "./home/sections.css";
