@@ -12,15 +12,20 @@
     font-size: 16px;
 
     border-style: none;
+
+    transition: all 0.3s ease-out
 }
 
 .button:hover {
     cursor: pointer;
+
+    opacity: 70%;
+    transition: all 0.3s ease-in
 }
 
 .button:active {
     background: #ad8802;
-    transition: 0.3s
+    transition: all 0.3s ease-in
 }
 
 .btn-1 {

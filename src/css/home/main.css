@@ -3,6 +3,8 @@
     width: 100%;
 
     position: absolute;
+
+    z-index: auto;
 }
 
 .option {
@@ -11,15 +13,16 @@
     width: 200px;
     height: 200px;
 
-    margin-right: 80px;
+    margin-right: 6%;
 
-    border-radius: 100px;
+    border-radius: 50%;
 
     box-shadow: 0px 88px 35px rgba(0, 0, 0, 0.01),
         0px 50px 30px rgba(0, 0, 0, 0.05),
         0px 22px 22px rgba(0, 0, 0, 0.09),
         0px 6px 12px rgba(0, 0, 0, 0.1),
         0px 0px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 .option:last-of-type {
@@ -29,6 +32,7 @@
 .option div {
     text-align: center;
     height: 50%;
+
 }
 
 .option div:first-of-type {
@@ -46,6 +50,8 @@
 }
 
 .option-icon {
-    width: 64px;
-    height: 64px;
+    width: 55px;
+    height: 55px;
+
+    margin-bottom: 10px;
 }

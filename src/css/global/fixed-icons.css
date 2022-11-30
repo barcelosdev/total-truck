@@ -1,0 +1,59 @@
+.fixed-icon {
+    position: fixed;
+
+    z-index: 2;
+
+    filter: drop-shadow(0px 36px 14px rgba(0, 0, 0, 0.01)) 
+        drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.05)) 
+        drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.09)) 
+        drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1)) 
+        drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}
+
+.whatsapp-icon {
+    left: 92%;
+    top: 85%;
+
+    width: 64px;
+    height: 64.5px;
+}
+
+.top-icon {
+    left: 92%;
+    top: 73%;
+
+    opacity: 70%;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    background-color: var(--color-0);
+
+    transition: all 0.3 ease-in;
+}
+
+[data-icon] {
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+[data-icon="up"] {
+    transform: translate3d(0px, -10px, 0px);
+}
+
+[data-icon].animate {
+    visibility: visible;
+    opacity: 70%;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.top-icon:hover {
+    opacity: 1;
+}
+
+.up-img {
+    width: 24px;
+    height: 14.82px;
+}

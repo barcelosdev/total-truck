@@ -12,22 +12,27 @@
 </head>
 
 <body>
-   <header>
-      <nav class="navbar">
-         <div class="content">
-            <img src="./img/logo.png" alt="logo" class="logo">
+   <header id="header">
+      <nav class="navbar flex row jf-space-between ai-center">
+         <div class="nav-content flex row jf-center ai-center">
+            <img src="./img/logo.png" alt="Total Truck logo" class="nav-logo">
+            <img src="./img/logo-name.svg" alt="Total Truck" class="nav-logo-name">
          </div>
          <div>
             <ul>
-               <li><a href="#sobre">SOBRE</a></li>
-               <li><a href="#contato">CONTATO</a></li>
-               <li><a href="#beneficios">BENEFÍCIOS</a></li>
+               <li>
+                  <a href="#about" style="scroll-behavior: smooth;">
+                     SOBRE
+                  </a>
+               </li>
+               <li><a href="#contacts">CONTATO</a></li>
+               <li><a href="#benefits">BENEFÍCIOS</a></li>
                <li><a href="#tracking">RASTREAMENTO</a></li>
             </ul>
          </div>
-         <div class="content">
+         <div class="nav-content flex row jf-center ai-center">
             <button class="button btn-1">
-               <img src="../src/img/icons/user.svg" alt="Área do Associado" class="">
+               <img src="../src/img/icons/user.svg" alt="Área do Associado">
                Associado
             </button>
          </div>
@@ -97,25 +102,285 @@
          </a>
       </div>
    </main>
-   <section id="about" class="section">
-      <div>
-         <img src="" alt="">
-         <button type="submit">button</button>
+   <section id="about" class="section bookmark flex-center row">
+      <div class="section-container">
+         <img class="section-img" src="./img/sections/section001.png" alt="Escritório">
+         <!-- <button class="section-button" type="submit">button</button> -->
       </div>
-      <div>
-         
+      <div class="section-container">
+         <div class="section-content">
+            <h5 class="section-title">SOBRE NÓS</h5>
+            <h1 class="section-subtitle">Somos uma associção
+               de proteção veicular</h1>
+         </div>
+         <div class="section-content flex-center row">
+            <div class="section-content-item">
+               <div>
+                  <img src="./img/icons/target.svg" alt="">
+                  <h3>Missão</h3>
+               </div>
+               <p>Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Distinctio sequi labore </p>
+            </div>
+            <div class="section-content-item">
+               <div>
+                  <img src="./img/icons/vision.svg" alt="">
+                  <h3>Visão</h3>
+               </div>
+               <p>Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Distinctio sequi labore </p>
+            </div>
+            <div class="section-content-item">
+               <div>
+                  <img src="./img/icons/values.svg" alt="">
+                  <h3>Valores</h3>
+               </div>
+               <p>Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Distinctio sequi labore </p>
+            </div>
+         </div>
       </div>
    </section>
-   <section id="benefits" class="section">
+   <section id="benefits" class="section bookmark flex-center row ">
+      <div class="section-container">
+         <div class="section-content" style="margin-bottom: 18px;">
+            <h5 class="section-title">BENEFÍCIOS</h5>
+            <h1 class="section-subtitle">Por que escolher a Total Truck?</h1>
+         </div>
+         <div class="section-content flex-center column">
+            <div class="flex-center row">
+               <div class="card flex-center column">
+                  <img src="./img/icons/tools.svg" alt="" style="margin-right: 0px; margin-bottom: 7px;">
+                  <h3>Oficinas Especializadas</h3>
+               </div>
+               <div class="card flex-center column">
+                  <img src="./img/icons/money.svg" alt="" style="margin-right: 0px; margin-bottom: 7px;">
+                  <h3>Custo Benefício</h3>
+               </div>
+               <div class="card flex-center column">
+                  <img src="./img/icons/24hours.svg" alt="" style="margin-right: 0px; margin-bottom: 7px;">
+                  <h3>Atendimento 24 Horas</h3>
+               </div>
+            </div>
+            <div class="flex-center row">
+               <div class="card flex-center column">
+                  <img src="./img/icons/app.svg" alt="" style="margin-right: 0px; margin-bottom: 7px;">
+                  <h3>App de Rastreamento</h3>
+               </div>
+               <div class="card flex-center column">
+                  <img src="./img/icons/car.svg" alt="" style="margin-right: 0px; margin-bottom: 7px;">
+                  <h3 style="width: 104px">Carro Reserva</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section-content">
+         <img class="section-img" src="./img/sections/section002.png" alt="App">
+         <!-- <button class="section-button" type="submit">button</button> -->
+      </div>
+   </section>
+   <section id="depoiments" class="section flex-center column">
+      <div class="section-container" style="width: 1040px; height: 487px; margin-right: 0px;">
+         <div class="section-content" style="margin-bottom: 35px;">
+            <h5 class="section-title">DEPOIMENTOS</h5>
+            <h1 class="section-subtitle">O que dizem de nós?</h1>
+         </div>
+         <div>
+            <img class="depoiments-bg" src="./img/sections/section003.png" alt="Aperto de mãos">
+         </div>
+      </div>
+      <div class="depoiments-container flex-center row">
+         <div class="depoiment-card flex-center">
+            <div class="depoiment-card-content">
+               <div>
+                  <img src="./img/icons/quote.svg" alt="Aspas dupla">
+               </div>
+               <div>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Distinctio sequi labore
+                  </p>
+               </div>
+               <div class="profile flex-center row">
+                  <div>
+                     <h3>User Name</h3>
+                     <h6>Associado</h6>
+                  </div>
+                  <div>
+                     <img src="./img/profile.png" alt="Foto do Associado">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="depoiment-card flex-center">
+            <div class="depoiment-card-content">
+               <div>
+                  <img src="./img/icons/quote.svg" alt="Aspas dupla">
+               </div>
+               <div>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Distinctio sequi labore
+                  </p>
+               </div>
+               <div class="profile flex-center row">
+                  <div>
+                     <h3>User Name</h3>
+                     <h6>Associado</h6>
+                  </div>
+                  <div>
+                     <img src="./img/profile.png" alt="Foto do Associado">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="depoiment-card flex-center">
+            <div class="depoiment-card-content">
+               <div>
+                  <img src="./img/icons/quote.svg" alt="Aspas dupla">
+               </div>
+               <div>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Distinctio sequi labore
+                  </p>
+               </div>
+               <div class="profile flex-center row">
+                  <div>
+                     <h3>User Name</h3>
+                     <h6>Associado</h6>
+                  </div>
+                  <div>
+                     <img src="./img/profile.png" alt="Foto do Associado">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="depoiment-card flex-center">
+            <div class="depoiment-card-content">
+               <div>
+                  <img src="./img/icons/quote.svg" alt="Aspas dupla">
+               </div>
+               <div>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Distinctio sequi labore
+                  </p>
+               </div>
+               <div class="profile flex-center row">
+                  <div>
+                     <h3>User Name</h3>
+                     <h6>Associado</h6>
+                  </div>
+                  <div>
+                     <img src="./img/profile.png" alt="Foto do Associado">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
    </section>
-   <section id="depoiments" class="section">
-      
-   </section>
-   <footer class="footer">
-
+   <footer id="contacts" class="footer flex row">
+      <div id="foot001" class="footer-container flex-center column">
+         <div class="footer-content flex column">
+            <div>
+               <a class="flex row jf-start" href="index.html">
+                  <img src="./img/logo.png" alt="" class="footer-logo" style="margin-right: 19px;">
+                  <img src="./img/logo-name.svg" alt="" class="footer-logo-name">
+               </a>
+            </div>
+            <h2 class="footer-font" style="width: 274px; padding-left: 14px;">
+               A proteção veicular que mais cresce no Brasil
+            </h2>
+            <div class="flex row ai-center">
+               <h3 class="footer-font" style="padding-left: 14px; margin-right: 17px;">
+                  Segue a gente:
+               </h3>
+               <a href="http://" style="margin-right: 17px;">
+                  <img src="./img/icons/instagram.svg" alt="Instagram">
+               </a>
+               <a href="http://">
+                  <img src="./img/icons/facebook.svg" alt="Facebook">
+               </a>
+            </div>
+         </div>
+      </div>
+      <div id="foot002" class="footer-container flex-center column">
+         <div class="footer-content flex column">
+            <h3 class="footer-title" style="margin-top: 30px;">
+               NAVEGUE
+            </h3>
+            <div class="flex column" style="height: 67%;">
+               <a href="#about" class="footer-font" style="margin-bottom: 22px;">
+                  Sobre
+               </a>
+               <a href="#contacts" class="footer-font" style="margin-bottom: 22px;">
+                  Contato
+               </a>
+               <a href="#benefits" class="footer-font" style="margin-bottom: 22px;">
+                  Benefícios
+               </a>
+               <a href="" class="footer-font" style="margin-bottom: 22px;">
+                  Rastreamento
+               </a>
+               <a href="" class="footer-font">
+                  Área do Associado
+               </a>
+            </div>
+         </div>
+      </div>
+      <div id="foot003" class="footer-container flex-center column">
+         <div class="footer-content flex column">
+            <h3 class="footer-title" style="margin-top: 30px;">
+               CONTATO
+            </h3>
+            <div class="flex column jf-space-between" style="height: 67%;">
+               <address class="footer-font">
+                  Av. Henrique de Holanda, 999
+                  Vitória de Santo Antão - PE
+                  55610-200
+               </address>
+               <div>
+                  <div class="flex row ai-center">
+                     <img src="./img/icons/mail.svg" alt="E-mail" style="margin-right: 12px">
+                     <a href="mailto:barcelos_1996@hotmail.com" class="footer-font">
+                        barcelos_1996@hotmail.com
+                     </a>
+                  </div>
+                  <div class="flex row ai-center" style="margin-top: 25px;">
+                     <img src="./img/icons/phone.svg" alt="Celular" style="margin-right: 12px">
+                     <a href="tel:+5581999133931" class="footer-font">
+                        (81) 99913-3931
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="foot004" class="footer-container flex-center column">
+         <div class="footer-content flex column">
+            <h3 class="footer-title" style="margin-top: 30px;">
+               LOCALIZAÇÃO
+            </h3>
+            <div>
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8733682097227!2d-35.2833647408224!3d-8.114374093002063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa54b5dd19d9f7%3A0x1a068f2b1c63c9ae!2sR.%20Dr.%20Jos%C3%A9%20Augusto%2C%201333%20-%20Iraque%2C%20Vit%C3%B3ria%20de%20Santo%20Ant%C3%A3o%20-%20PE%2C%2055612-510!5e0!3m2!1spt-BR!2sbr!4v1669827483795!5m2!1spt-BR!2sbr"
+                  width="209" height="210" style="border:0;border-radius:20px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
+            </div>
+         </div>
+      </div>
    </footer>
+   <a href="#header" class="fixed-icon top-icon flex-center" data-icon="up">
+      <img src="./img/icons/up.svg" alt="Para o início" class="up-img">
+   </a>
+   <a href="">
+      <img src="./img/icons/whatsapp-icon.svg" alt="WhatsApp" class="fixed-icon whatsapp-icon">
+   </a>
    <script src="../src/js/carousel.js"></script>
+   <script src="../src/js/reveal-icon.js"></script>
 </body>
 
 </html>

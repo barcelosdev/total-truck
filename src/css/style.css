@@ -2,11 +2,17 @@
 
 @import "./global/global.css";
 
+@import "./global/flex.css";
+
+@import "./global/fixed-icons.css";
+
 @import "./global/navbar.css";
 
 @import "./global/buttons.css";
 
 @import "./global/colors.css";
+
+@import "./global/footer.css";
 
 /* Home */
 
@@ -15,3 +21,5 @@
 @import "./home/main.css";
 
 @import "./home/sections.css";
+
+@import "./home/depoiments.css";

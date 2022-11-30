@@ -4,26 +4,44 @@
     font-family: 'Poppins';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+blockquote,
+dd {
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+
+    transition: all 0.3s ease-out;
 }
 
-.flex-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.row {
-    flex-direction: row;
-}
-
-.column {
-    flex-direction: column;
+a:hover {
+    transition: all 0.3s ease-in;
+    opacity: 70%;
 }
