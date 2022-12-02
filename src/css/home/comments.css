@@ -1,0 +1,176 @@
+#comments {
+    width: 100%;
+    height: 590px;
+}
+
+.comments-bg {
+    object-fit: cover;
+
+    width: 100%;
+    height: 367px;
+
+    border-radius: 30px;
+}
+
+.comments-section {
+    width: 1040px;
+    height: 487px;
+    margin-right: 0px;
+}
+
+.comments-container {
+    width: 1165px;
+    height: 367px;
+    margin-top: 104px;
+
+    position: absolute;
+}
+
+.comments-card {
+    background-color: #fff;
+
+    height: 297px;
+    width: 261px;
+    margin-right: 41px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 66px 27px rgba(0, 0, 0, 0.01),
+        0px 37px 22px rgba(0, 0, 0, 0.05),
+        0px 17px 17px rgba(0, 0, 0, 0.09),
+        0px 4px 9px rgba(0, 0, 0, 0.1),
+        0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.comments-card:last-of-type {
+    margin-right: 0px;
+}
+
+.comments-card-content {
+    height: 85%;
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comments-card-content div p {
+    height: 148px;
+    overflow: hidden;
+
+    font-weight: 400;
+    color: var(--color-3)
+}
+
+.profile {
+    height: 53px;
+    justify-content: space-between;
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 50px;
+}
+
+.profile div h3 {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--color-1);
+}
+
+.profile div h6 {
+    font-weight: 275;
+    font-size: 12px;
+    color: var(--color-1);
+}
+
+.profile div img {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+@media (max-width: 1170px) {
+    .comments-section {
+        width: 800px;
+        height: 487px;
+    }
+    #comment003 {
+        margin-right: 0px;
+    }
+    #comment004 {
+        display: none;
+    }
+}
+
+@media (max-width: 870px) {
+    .comments-section {
+        width: 500px;
+        height: 487px;
+    }
+    #comment002 {
+        margin-right: 0px;
+    }
+    #comment003 {
+        display: none;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 578px) {
+    .comments-container {
+        width: 582.5px;
+        height: 800px;
+
+        flex-wrap: wrap;
+        margin-top: 104px;
+
+        position: absolute;
+    }
+    .comments-section {
+        width: 460px;
+        height: 487px;
+    }
+    .comments-card {
+        width: 230px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .comments-section {
+        width: 80%;
+    }
+
+    .comments-container {
+        flex-direction: column;
+        margin-top: 40%;
+    }
+
+    .comments-card {
+        width: 360px;
+        height: 210px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .comments-card div p {
+        height: auto;
+    }
+
+    .comments-bg {
+        display: none;
+    }
+}
+
+@media (max-width: 412px) {
+    .comments-container {
+        flex-direction: column;
+        margin-top: 60%;
+    }
+}

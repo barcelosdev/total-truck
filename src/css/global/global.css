@@ -45,3 +45,17 @@ a:hover {
     transition: all 0.3s ease-in;
     opacity: 70%;
 }
+
+button {
+    padding: 0;
+    border-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+button:active {
+    opacity: 20%;
+}
