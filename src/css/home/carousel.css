@@ -19,6 +19,13 @@
     position: relative;
 }
 
+.slide-img {
+    object-fit: cover;
+
+    width: 100%;
+    height: 470px;
+}
+
 .slide a:hover {
     opacity: 1;
 }
@@ -63,6 +70,10 @@
     animation-duration: 1.5s;
 }
 
+.size002, .size003 {
+    display: none;
+}
+
 @keyframes fade {
     from {
         opacity: .4
@@ -70,5 +81,25 @@
 
     to {
         opacity: 1
+    }
+}
+
+@media (max-width: 1250px) {
+    .size001, .size003 {
+        display: none;
+    }
+
+    .size002 {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .size001, .size002 {
+        display: none;
+    }
+
+    .size003 {
+        display: flex;
     }
 }

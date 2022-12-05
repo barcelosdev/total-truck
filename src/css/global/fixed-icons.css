@@ -1,4 +1,5 @@
 .fixed-icon {
+    left: 93.5%;
     position: fixed;
 
     z-index: 2;
@@ -11,7 +12,7 @@
 }
 
 .whatsapp-icon {
-    left: 92%;
+
     top: 86%;
 
     width: 64px;
@@ -19,7 +20,6 @@
 }
 
 .top-icon {
-    left: 92%;
     top: 73%;
 
     opacity: 70%;
@@ -30,7 +30,7 @@
 
     background-color: var(--color-0);
 
-    transition: all 0.3 ease-in;
+    transition: all 0.3s ease-in;
 }
 
 [data-icon] {
@@ -56,4 +56,15 @@
 .up-img {
     width: 24px;
     height: 14.82px;
+}
+
+@media (max-width: 1250px) {
+    .whatsapp-icon {
+        display: none;
+    }
+
+    .fixed-icon {
+        left: 80%;
+        top: 81%
+    }
 }

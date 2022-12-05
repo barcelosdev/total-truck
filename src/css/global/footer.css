@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-color: var(--color-1);
 
     width: 100%;
@@ -14,6 +14,16 @@ footer {
     height: 80%;
 
     justify-content: space-between;
+}
+
+.footer-content h2 {
+    width: 274px;
+    padding-left: 14px
+}
+
+.footer-content div h3 {
+    padding-left: 14px;
+    margin-right: 17px;
 }
 
 .footer-font {
@@ -54,4 +64,60 @@ footer {
 #foot004 {
     width: 333px;
     height: 398px;
+}
+
+@media (max-width: 1170px) {
+    #foot004 {
+        display: none;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .footer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #foot003 {
+        width: 100%;
+    }
+
+    #foot003 div {
+        width: 87%;
+    }
+}
+
+@media (max-width: 717px) {
+    .footer-content {
+        align-items: center;
+    }
+
+    .footer-content div {
+        align-items: center;
+    }
+
+    .footer-content h2 {
+        text-align: center;
+        padding-left: 0px
+    }
+
+    .footer-content div h3 {
+        padding-left: 0px;
+    }
+
+    #foot001, #foot002, #foot003 {
+        width: 100%;
+    }
+
+    #foot002, #foot003 {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding-bottom: 30%;
+    }
 }
