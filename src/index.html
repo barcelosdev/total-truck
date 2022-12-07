@@ -12,21 +12,21 @@
 </head>
 
 <body>
-<header id="header">
-    <nav class="navbar flex row jf-space-between ai-center">
-        <div class="nav-content flex row jf-center ai-center">
-            <img src="./img/logo.png" alt="Total Truck logo" class="nav-logo">
-            <img src="./img/logo-name.svg" alt="Total Truck" class="nav-logo-name">
-        </div>
-        <button class="nav-side-menu flex jf-center ai-center">
+<header id="header" class="header flex row jf-space-between ai-center">
+    <div class="nav-content flex row jf-center ai-center">
+        <img src="./img/logo.png" alt="Total Truck logo" class="nav-logo">
+        <img src="./img/logo-name.svg" alt="Total Truck" class="nav-logo-name">
+    </div>
+    <nav id="nav" class="navbar flex row jf-space-between ai-center">
+        <button id="nav-mobile" class="nav-mobile flex jf-center ai-center">
             <img src="./img/icons/menu.svg" alt="Menu lateral">
         </button>
-        <div class="nav-menu">
-            <ul style="margin-right: 59px;">
-                <li><a href="#about" class="nav-bookmark">SOBRE</a></li>
-                <li><a href="#contacts" class="nav-bookmark">CONTATO</a></li>
-                <li><a href="#benefits" class="nav-bookmark">BENEFÍCIOS</a></li>
-                <li><a href="#tracking" class="nav-bookmark">RASTREAMENTO</a></li>
+        <div id="nav-menu">
+            <ul>
+                <li><a href="#about">SOBRE</a></li>
+                <li><a href="#contacts">CONTATO</a></li>
+                <li><a href="#benefits">BENEFÍCIOS</a></li>
+                <li><a href="#tracking">RASTREAMENTO</a></li>
             </ul>
         </div>
         <!--         <div class="nav-content flex row jf-center ai-center">-->
@@ -390,12 +390,15 @@
         </div>
     </div>
 </footer>
-<a href="#header" class="fixed-icon top-icon flex-center" data-icon="up">
-    <img src="./img/icons/up.svg" alt="Para o início" class="up-img">
-</a>
-<a href="">
-    <img src="./img/icons/whatsapp-icon.svg" alt="WhatsApp" class="fixed-icon whatsapp-icon">
-</a>
+<div class="fixed-icons flex column ai-center jf-center">
+    <a href="#header" class="top-icon flex-center" data-icon="up">
+        <img src="./img/icons/up.svg" alt="Para o início" class="up-img">
+    </a>
+    <a href="">
+        <img src="./img/icons/whatsapp-icon.svg" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+</div>
+<script src="../src/js/menu-mobile.js"></script>
 <script src="../src/js/carousel.js"></script>
 <script src="../src/js/reveal-icon.js"></script>
 </body>

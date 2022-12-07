@@ -1,27 +1,21 @@
-.fixed-icon {
+.fixed-icons {
     left: 93.5%;
+    top: 480px;
     position: fixed;
 
     z-index: 2;
 
-    filter: drop-shadow(0px 36px 14px rgba(0, 0, 0, 0.01)) 
-        drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.05)) 
-        drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.09)) 
-        drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1)) 
-        drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 36px 14px rgba(0, 0, 0, 0.01)) drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.05)) drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
 }
 
 .whatsapp-icon {
-
-    top: 86%;
-
     width: 64px;
     height: 64.5px;
+
+    margin-top: 20px;
 }
 
 .top-icon {
-    top: 73%;
-
     opacity: 70%;
 
     width: 64px;
@@ -58,13 +52,28 @@
     height: 14.82px;
 }
 
-@media (max-width: 1250px) {
-    .whatsapp-icon {
-        display: none;
+@media (max-width: 1149px) {
+    .fixed-icons {
+        left: 90%;
     }
+}
 
-    .fixed-icon {
+@media (max-width: 750px) {
+    .fixed-icons {
+        left: 87%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fixed-icons {
+        left: 83%;
+        top: 380px
+    }
+}
+
+@media (max-width: 499px) {
+    .fixed-icons {
         left: 80%;
-        top: 81%
+        top: calc(100vh - 28%)
     }
 }
